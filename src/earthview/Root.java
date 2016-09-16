@@ -30,6 +30,7 @@ public class Root extends javax.swing.JFrame {
         top = new javax.swing.JPanel();
         center = new javax.swing.JPanel();
         bottom = new javax.swing.JPanel();
+        jButton1 = new javax.swing.JButton();
         left = new javax.swing.JPanel();
         menuBar = new javax.swing.JMenuBar();
         fileMenu = new javax.swing.JMenu();
@@ -66,16 +67,20 @@ public class Root extends javax.swing.JFrame {
             .addGap(0, 36, Short.MAX_VALUE)
         );
 
+        jButton1.setText("jButton1");
+
         javax.swing.GroupLayout centerLayout = new javax.swing.GroupLayout(center);
         center.setLayout(centerLayout);
         centerLayout.setHorizontalGroup(
             centerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(bottom, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         centerLayout.setVerticalGroup(
             centerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, centerLayout.createSequentialGroup()
-                .addContainerGap(169, Short.MAX_VALUE)
+                .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 163, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(bottom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
@@ -148,6 +153,7 @@ public class Root extends javax.swing.JFrame {
     private javax.swing.JPanel center;
     private javax.swing.JMenu editMenu;
     private javax.swing.JMenu fileMenu;
+    private javax.swing.JButton jButton1;
     private javax.swing.JPanel left;
     private javax.swing.JMenuBar menuBar;
     private javax.swing.JPanel top;
