@@ -28,6 +28,7 @@ public class Root extends javax.swing.JFrame {
     private void initComponents() {
 
         top = new javax.swing.JPanel();
+        Go = new javax.swing.JButton();
         center = new javax.swing.JPanel();
         bottom = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
@@ -41,15 +42,28 @@ public class Root extends javax.swing.JFrame {
         top.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         top.setPreferredSize(new java.awt.Dimension(701, 70));
 
+        Go.setText("Go");
+        Go.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                GoActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout topLayout = new javax.swing.GroupLayout(top);
         top.setLayout(topLayout);
         topLayout.setHorizontalGroup(
             topLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 697, Short.MAX_VALUE)
+            .addGroup(topLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(Go)
+                .addContainerGap(1012, Short.MAX_VALUE))
         );
         topLayout.setVerticalGroup(
             topLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 66, Short.MAX_VALUE)
+            .addGroup(topLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(Go)
+                .addContainerGap(32, Short.MAX_VALUE))
         );
 
         getContentPane().add(top, java.awt.BorderLayout.PAGE_START);
@@ -60,7 +74,7 @@ public class Root extends javax.swing.JFrame {
         bottom.setLayout(bottomLayout);
         bottomLayout.setHorizontalGroup(
             bottomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 292, Short.MAX_VALUE)
+            .addGap(0, 963, Short.MAX_VALUE)
         );
         bottomLayout.setVerticalGroup(
             bottomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -79,7 +93,7 @@ public class Root extends javax.swing.JFrame {
         centerLayout.setVerticalGroup(
             centerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, centerLayout.createSequentialGroup()
-                .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 163, Short.MAX_VALUE)
+                .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 349, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(bottom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
@@ -96,7 +110,7 @@ public class Root extends javax.swing.JFrame {
         );
         leftLayout.setVerticalGroup(
             leftLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 347, Short.MAX_VALUE)
+            .addGap(0, 391, Short.MAX_VALUE)
         );
 
         getContentPane().add(left, java.awt.BorderLayout.LINE_START);
@@ -111,6 +125,14 @@ public class Root extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void GoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GoActionPerformed
+        
+        
+        GoDialog goDialog = new GoDialog(this,true);
+        goDialog.setVisible(true);
+        
+    }//GEN-LAST:event_GoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -149,6 +171,7 @@ public class Root extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Go;
     private javax.swing.JPanel bottom;
     private javax.swing.JPanel center;
     private javax.swing.JMenu editMenu;
