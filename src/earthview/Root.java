@@ -127,11 +127,9 @@ public class Root extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void GoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GoActionPerformed
-        
-        
+       
         GoDialog goDialog = new GoDialog(this,true);
-        goDialog.setVisible(true);
-        
+        goDialog.setVisible(true);       
     }//GEN-LAST:event_GoActionPerformed
 
     /**
