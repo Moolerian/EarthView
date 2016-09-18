@@ -36,6 +36,10 @@ public class Root extends javax.swing.JFrame {
         menuBar = new javax.swing.JMenuBar();
         fileMenu = new javax.swing.JMenu();
         editMenu = new javax.swing.JMenu();
+        jMenu1 = new javax.swing.JMenu();
+        compassMenuItem = new javax.swing.JCheckBoxMenuItem();
+        worldMenuItem = new javax.swing.JCheckBoxMenuItem();
+        scaleMenuItem = new javax.swing.JCheckBoxMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -121,6 +125,37 @@ public class Root extends javax.swing.JFrame {
         editMenu.setText("Edit");
         menuBar.add(editMenu);
 
+        jMenu1.setText("view");
+
+        compassMenuItem.setSelected(true);
+        compassMenuItem.setText("compass");
+        compassMenuItem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                compassMenuItemActionPerformed(evt);
+            }
+        });
+        jMenu1.add(compassMenuItem);
+
+        worldMenuItem.setSelected(true);
+        worldMenuItem.setText("worldView");
+        worldMenuItem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                worldMenuItemActionPerformed(evt);
+            }
+        });
+        jMenu1.add(worldMenuItem);
+
+        scaleMenuItem.setSelected(true);
+        scaleMenuItem.setText("Scale");
+        scaleMenuItem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                scaleMenuItemActionPerformed(evt);
+            }
+        });
+        jMenu1.add(scaleMenuItem);
+
+        menuBar.add(jMenu1);
+
         setJMenuBar(menuBar);
 
         pack();
@@ -131,6 +166,18 @@ public class Root extends javax.swing.JFrame {
         GoDialog goDialog = new GoDialog(this,true);
         goDialog.setVisible(true);       
     }//GEN-LAST:event_GoActionPerformed
+
+    private void scaleMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_scaleMenuItemActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_scaleMenuItemActionPerformed
+
+    private void worldMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_worldMenuItemActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_worldMenuItemActionPerformed
+
+    private void compassMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_compassMenuItemActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_compassMenuItemActionPerformed
 
     /**
      * @param args the command line arguments
@@ -172,11 +219,15 @@ public class Root extends javax.swing.JFrame {
     private javax.swing.JButton Go;
     private javax.swing.JPanel bottom;
     private javax.swing.JPanel center;
+    private javax.swing.JCheckBoxMenuItem compassMenuItem;
     private javax.swing.JMenu editMenu;
     private javax.swing.JMenu fileMenu;
     private javax.swing.JButton jButton1;
+    private javax.swing.JMenu jMenu1;
     private javax.swing.JPanel left;
     private javax.swing.JMenuBar menuBar;
+    private javax.swing.JCheckBoxMenuItem scaleMenuItem;
     private javax.swing.JPanel top;
+    private javax.swing.JCheckBoxMenuItem worldMenuItem;
     // End of variables declaration//GEN-END:variables
 }
