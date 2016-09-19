@@ -127,7 +127,6 @@ public class Root extends javax.swing.JFrame {
 
         jMenu1.setText("view");
 
-        compassMenuItem.setSelected(true);
         compassMenuItem.setText("compass");
         compassMenuItem.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -136,7 +135,6 @@ public class Root extends javax.swing.JFrame {
         });
         jMenu1.add(compassMenuItem);
 
-        worldMenuItem.setSelected(true);
         worldMenuItem.setText("worldView");
         worldMenuItem.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -145,7 +143,6 @@ public class Root extends javax.swing.JFrame {
         });
         jMenu1.add(worldMenuItem);
 
-        scaleMenuItem.setSelected(true);
         scaleMenuItem.setText("Scale");
         scaleMenuItem.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
