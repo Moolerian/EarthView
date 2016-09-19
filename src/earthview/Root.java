@@ -33,6 +33,8 @@ public class Root extends javax.swing.JFrame {
         bottom = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
         left = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        facilityList = new javax.swing.JList<>();
         menuBar = new javax.swing.JMenuBar();
         fileMenu = new javax.swing.JMenu();
         newMenuItem = new javax.swing.JMenuItem();
@@ -79,7 +81,7 @@ public class Root extends javax.swing.JFrame {
         bottom.setLayout(bottomLayout);
         bottomLayout.setHorizontalGroup(
             bottomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 963, Short.MAX_VALUE)
+            .addGap(0, 950, Short.MAX_VALUE)
         );
         bottomLayout.setVerticalGroup(
             bottomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -107,15 +109,18 @@ public class Root extends javax.swing.JFrame {
 
         left.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
+        facilityList.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
+        jScrollPane1.setViewportView(facilityList);
+
         javax.swing.GroupLayout leftLayout = new javax.swing.GroupLayout(left);
         left.setLayout(leftLayout);
         leftLayout.setHorizontalGroup(
             leftLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 113, Short.MAX_VALUE)
         );
         leftLayout.setVerticalGroup(
             leftLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 391, Short.MAX_VALUE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 391, Short.MAX_VALUE)
         );
 
         getContentPane().add(left, java.awt.BorderLayout.LINE_START);
@@ -232,9 +237,11 @@ public class Root extends javax.swing.JFrame {
     private javax.swing.JPanel center;
     private javax.swing.JCheckBoxMenuItem compassMenuItem;
     private javax.swing.JMenu editMenu;
+    public static javax.swing.JList<String> facilityList;
     private javax.swing.JMenu fileMenu;
     private javax.swing.JButton jButton1;
     private javax.swing.JMenu jMenu1;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JPanel left;
     private javax.swing.JMenuBar menuBar;
     private javax.swing.JMenuItem newMenuItem;

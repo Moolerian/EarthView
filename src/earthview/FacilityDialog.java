@@ -108,7 +108,7 @@ public class FacilityDialog extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTree facilityTree;
+    public static javax.swing.JTree facilityTree;
     private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
 }
