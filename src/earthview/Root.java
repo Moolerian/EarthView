@@ -35,6 +35,7 @@ public class Root extends javax.swing.JFrame {
         left = new javax.swing.JPanel();
         menuBar = new javax.swing.JMenuBar();
         fileMenu = new javax.swing.JMenu();
+        newMenuItem = new javax.swing.JMenuItem();
         editMenu = new javax.swing.JMenu();
         jMenu1 = new javax.swing.JMenu();
         compassMenuItem = new javax.swing.JCheckBoxMenuItem();
@@ -120,6 +121,15 @@ public class Root extends javax.swing.JFrame {
         getContentPane().add(left, java.awt.BorderLayout.LINE_START);
 
         fileMenu.setText("File");
+
+        newMenuItem.setText("newMenuItem");
+        newMenuItem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                newMenuItemActionPerformed(evt);
+            }
+        });
+        fileMenu.add(newMenuItem);
+
         menuBar.add(fileMenu);
 
         editMenu.setText("Edit");
@@ -176,6 +186,10 @@ public class Root extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_compassMenuItemActionPerformed
 
+    private void newMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_newMenuItemActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_newMenuItemActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -223,6 +237,7 @@ public class Root extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu1;
     private javax.swing.JPanel left;
     private javax.swing.JMenuBar menuBar;
+    private javax.swing.JMenuItem newMenuItem;
     private javax.swing.JCheckBoxMenuItem scaleMenuItem;
     private javax.swing.JPanel top;
     private javax.swing.JCheckBoxMenuItem worldMenuItem;
