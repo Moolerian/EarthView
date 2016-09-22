@@ -32,6 +32,9 @@ public class FacilityDialog extends javax.swing.JDialog {
         facilityTree = new javax.swing.JTree();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setAlwaysOnTop(true);
+        setLocationByPlatform(true);
+        setType(java.awt.Window.Type.POPUP);
 
         javax.swing.tree.DefaultMutableTreeNode treeNode1 = new javax.swing.tree.DefaultMutableTreeNode("root");
         javax.swing.tree.DefaultMutableTreeNode treeNode2 = new javax.swing.tree.DefaultMutableTreeNode("JTree");

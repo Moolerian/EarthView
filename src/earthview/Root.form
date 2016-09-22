@@ -220,9 +220,7 @@
             <Component class="javax.swing.JList" name="facilityList">
               <Properties>
                 <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.editors2.ListModelEditor">
-                  <StringArray count="1">
-                    <StringItem index="0" value="1"/>
-                  </StringArray>
+                  <StringArray count="0"/>
                 </Property>
                 <Property name="selectionMode" type="int" value="0"/>
               </Properties>
@@ -232,7 +230,7 @@
               </Events>
               <AuxValues>
                 <AuxValue name="JavaCodeGenerator_SerializeTo" type="java.lang.String" value="Root_facilityList"/>
-                <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+                <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;Facility&gt;"/>
                 <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
               </AuxValues>
             </Component>

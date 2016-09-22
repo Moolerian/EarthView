@@ -5,6 +5,8 @@
  */
 package earthview;
 
+import model.Facility;
+
 /**
  *
  * @author Mohammad
@@ -109,11 +111,6 @@ public class Root extends javax.swing.JFrame {
 
         left.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        facilityList.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "1" };
-            public int getSize() { return strings.length; }
-            public String getElementAt(int i) { return strings[i]; }
-        });
         facilityList.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
         facilityList.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -261,7 +258,7 @@ public class Root extends javax.swing.JFrame {
     private javax.swing.JPanel center;
     private javax.swing.JCheckBoxMenuItem compassMenuItem;
     private javax.swing.JMenu editMenu;
-    public static javax.swing.JList<String> facilityList;
+    public static javax.swing.JList<Facility> facilityList;
     private javax.swing.JMenu fileMenu;
     private javax.swing.JButton jButton1;
     private javax.swing.JMenu jMenu1;
