@@ -117,11 +117,6 @@ public class Root extends javax.swing.JFrame {
                 facilityListMouseClicked(evt);
             }
         });
-        facilityList.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                facilityListFocusGained(evt);
-            }
-        });
         jScrollPane1.setViewportView(facilityList);
 
         javax.swing.GroupLayout leftLayout = new javax.swing.GroupLayout(left);
@@ -206,11 +201,6 @@ public class Root extends javax.swing.JFrame {
     private void newMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_newMenuItemActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_newMenuItemActionPerformed
-
-    private void facilityListFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_facilityListFocusGained
-
-        System.out.println("sfwfwefwe");        // TODO add your handling code here:
-    }//GEN-LAST:event_facilityListFocusGained
 
     private void facilityListMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_facilityListMouseClicked
         // TODO add your handling code here:
