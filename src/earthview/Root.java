@@ -32,6 +32,7 @@ public class Root extends javax.swing.JFrame {
         jMenuItem1 = new javax.swing.JMenuItem();
         top = new javax.swing.JPanel();
         Go = new javax.swing.JButton();
+        removeFacilityFromList = new javax.swing.JButton();
         center = new javax.swing.JPanel();
         bottom = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
@@ -62,6 +63,15 @@ public class Root extends javax.swing.JFrame {
             }
         });
 
+        removeFacilityFromList.setText("remove");
+        removeFacilityFromList.setToolTipText("");
+        removeFacilityFromList.setEnabled(false);
+        removeFacilityFromList.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removeFacilityFromListActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout topLayout = new javax.swing.GroupLayout(top);
         top.setLayout(topLayout);
         topLayout.setHorizontalGroup(
@@ -69,13 +79,17 @@ public class Root extends javax.swing.JFrame {
             .addGroup(topLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(Go)
-                .addContainerGap(1012, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(removeFacilityFromList)
+                .addContainerGap(925, Short.MAX_VALUE))
         );
         topLayout.setVerticalGroup(
             topLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(topLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(Go)
+                .addGroup(topLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Go)
+                    .addComponent(removeFacilityFromList))
                 .addContainerGap(32, Short.MAX_VALUE))
         );
 
@@ -222,6 +236,13 @@ public class Root extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_customeFacilityMenuItemActionPerformed
 
+    private void removeFacilityFromListActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removeFacilityFromListActionPerformed
+        // TODO add your handling code here: 
+        
+        
+        
+    }//GEN-LAST:event_removeFacilityFromListActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -274,6 +295,7 @@ public class Root extends javax.swing.JFrame {
     private javax.swing.JPanel left;
     private javax.swing.JMenuBar menuBar;
     private javax.swing.JMenuItem newMenuItem;
+    private javax.swing.JButton removeFacilityFromList;
     private javax.swing.JCheckBoxMenuItem scaleMenuItem;
     private javax.swing.JPanel top;
     private javax.swing.JCheckBoxMenuItem worldMenuItem;
