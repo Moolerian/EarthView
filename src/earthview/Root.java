@@ -29,6 +29,7 @@ public class Root extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jMenuItem1 = new javax.swing.JMenuItem();
         top = new javax.swing.JPanel();
         Go = new javax.swing.JButton();
         center = new javax.swing.JPanel();
@@ -40,11 +41,14 @@ public class Root extends javax.swing.JFrame {
         menuBar = new javax.swing.JMenuBar();
         fileMenu = new javax.swing.JMenu();
         newMenuItem = new javax.swing.JMenuItem();
+        customeFacilityMenuItem = new javax.swing.JMenuItem();
         editMenu = new javax.swing.JMenu();
         jMenu1 = new javax.swing.JMenu();
         compassMenuItem = new javax.swing.JCheckBoxMenuItem();
         worldMenuItem = new javax.swing.JCheckBoxMenuItem();
         scaleMenuItem = new javax.swing.JCheckBoxMenuItem();
+
+        jMenuItem1.setText("jMenuItem1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -134,13 +138,21 @@ public class Root extends javax.swing.JFrame {
 
         fileMenu.setText("File");
 
-        newMenuItem.setText("new");
+        newMenuItem.setText("NewFacility");
         newMenuItem.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 newMenuItemActionPerformed(evt);
             }
         });
         fileMenu.add(newMenuItem);
+
+        customeFacilityMenuItem.setText("CustomFacility");
+        customeFacilityMenuItem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                customeFacilityMenuItemActionPerformed(evt);
+            }
+        });
+        fileMenu.add(customeFacilityMenuItem);
 
         menuBar.add(fileMenu);
 
@@ -206,6 +218,10 @@ public class Root extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_facilityListMouseClicked
 
+    private void customeFacilityMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_customeFacilityMenuItemActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_customeFacilityMenuItemActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -247,11 +263,13 @@ public class Root extends javax.swing.JFrame {
     private javax.swing.JPanel bottom;
     private javax.swing.JPanel center;
     private javax.swing.JCheckBoxMenuItem compassMenuItem;
+    private javax.swing.JMenuItem customeFacilityMenuItem;
     private javax.swing.JMenu editMenu;
     public static javax.swing.JList<Facility> facilityList;
     private javax.swing.JMenu fileMenu;
     private javax.swing.JButton jButton1;
     private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JPanel left;
     private javax.swing.JMenuBar menuBar;

@@ -5,6 +5,8 @@
  */
 package earthview;
 
+import model.Facility;
+
 /**
  *
  * @author Mohammad
@@ -32,7 +34,7 @@ public class CreateFacilityDialog extends javax.swing.JDialog {
         facilityNameTextField = new javax.swing.JTextField();
         facilityComboBox = new javax.swing.JComboBox<>();
         jLabel2 = new javax.swing.JLabel();
-        javax.swing.JCheckBox facilityAsParent = new javax.swing.JCheckBox();
+        facilityAsParent = new javax.swing.JCheckBox();
         jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
@@ -162,7 +164,8 @@ public class CreateFacilityDialog extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JComboBox<String> facilityComboBox;
+    private javax.swing.JCheckBox facilityAsParent;
+    private javax.swing.JComboBox<Facility> facilityComboBox;
     private javax.swing.JTextField facilityNameTextField;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
