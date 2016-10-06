@@ -43,6 +43,7 @@ public class Root extends javax.swing.JFrame {
         fileMenu = new javax.swing.JMenu();
         newMenuItem = new javax.swing.JMenuItem();
         customeFacilityMenuItem = new javax.swing.JMenuItem();
+        CustomSatelliteMenuItem = new javax.swing.JMenuItem();
         editMenu = new javax.swing.JMenu();
         jMenu1 = new javax.swing.JMenu();
         compassMenuItem = new javax.swing.JCheckBoxMenuItem();
@@ -168,6 +169,14 @@ public class Root extends javax.swing.JFrame {
         });
         fileMenu.add(customeFacilityMenuItem);
 
+        CustomSatelliteMenuItem.setText("CustomSatellite");
+        CustomSatelliteMenuItem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CustomSatelliteMenuItemActionPerformed(evt);
+            }
+        });
+        fileMenu.add(CustomSatelliteMenuItem);
+
         menuBar.add(fileMenu);
 
         editMenu.setText("Edit");
@@ -243,6 +252,12 @@ public class Root extends javax.swing.JFrame {
         
     }//GEN-LAST:event_removeFacilityFromListActionPerformed
 
+    private void CustomSatelliteMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CustomSatelliteMenuItemActionPerformed
+        
+        CreateSatelliteDialog createSatelliteDialog = new CreateSatelliteDialog(this, rootPaneCheckingEnabled);
+        createSatelliteDialog.setVisible(true);
+    }//GEN-LAST:event_CustomSatelliteMenuItemActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -280,6 +295,7 @@ public class Root extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenuItem CustomSatelliteMenuItem;
     private javax.swing.JButton Go;
     private javax.swing.JPanel bottom;
     private javax.swing.JPanel center;
