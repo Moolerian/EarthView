@@ -42,12 +42,12 @@ public class CreateSatelliteDialog extends javax.swing.JDialog {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setAlwaysOnTop(true);
-        setFocusableWindowState(false);
+        setFocusCycleRoot(false);
         setLocationByPlatform(true);
-        setModalExclusionType(java.awt.Dialog.ModalExclusionType.APPLICATION_EXCLUDE);
+        setModalExclusionType(java.awt.Dialog.ModalExclusionType.TOOLKIT_EXCLUDE);
         setModalityType(java.awt.Dialog.ModalityType.APPLICATION_MODAL);
         setResizable(false);
-        setType(java.awt.Window.Type.POPUP);
+        setType(java.awt.Window.Type.UTILITY);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel1.setText("نام");
@@ -76,6 +76,11 @@ public class CreateSatelliteDialog extends javax.swing.JDialog {
         });
 
         saveSatellite.setText("save");
+        saveSatellite.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                saveSatelliteActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -85,8 +90,7 @@ public class CreateSatelliteDialog extends javax.swing.JDialog {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(showFileChooser, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
+                        .addGap(103, 103, 103)
                         .addComponent(selectedFileName, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGap(0, 42, Short.MAX_VALUE)
@@ -105,10 +109,13 @@ public class CreateSatelliteDialog extends javax.swing.JDialog {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(satelliteName)
                         .addGap(18, 18, 18)
-                        .addComponent(jLabel1)))
+                        .addComponent(jLabel1))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(showFileChooser, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
             .addGroup(layout.createSequentialGroup()
-                .addGap(87, 87, 87)
+                .addGap(100, 100, 100)
                 .addComponent(saveSatellite, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -127,18 +134,15 @@ public class CreateSatelliteDialog extends javax.swing.JDialog {
                     .addComponent(jLabel3)
                     .addComponent(widthLabel)
                     .addComponent(width, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(jLabel4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel4)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
-                        .addComponent(selectedFileName)
-                        .addGap(47, 47, 47))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(53, 53, 53)
-                        .addComponent(showFileChooser)))
+                    .addComponent(selectedFileName, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(showFileChooser, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addGap(18, 18, 18)
                 .addComponent(saveSatellite, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18))
+                .addGap(47, 47, 47))
         );
 
         pack();
@@ -150,6 +154,10 @@ public class CreateSatelliteDialog extends javax.swing.JDialog {
 
         // TODO add your handling code here:
     }//GEN-LAST:event_showFileChooserActionPerformed
+
+    private void saveSatelliteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveSatelliteActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_saveSatelliteActionPerformed
 
     /**
      * @param args the command line arguments
