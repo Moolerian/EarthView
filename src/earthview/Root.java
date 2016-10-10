@@ -33,6 +33,7 @@ public class Root extends javax.swing.JFrame {
         top = new javax.swing.JPanel();
         Go = new javax.swing.JButton();
         removeFacilityFromList = new javax.swing.JButton();
+        runPassPrediction = new javax.swing.JButton();
         center = new javax.swing.JPanel();
         bottom = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
@@ -73,6 +74,17 @@ public class Root extends javax.swing.JFrame {
             }
         });
 
+        runPassPrediction.setBackground(new java.awt.Color(255, 255, 255));
+        runPassPrediction.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        runPassPrediction.setForeground(new java.awt.Color(0, 51, 153));
+        runPassPrediction.setText("Run");
+        runPassPrediction.setToolTipText("");
+        runPassPrediction.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                runPassPredictionActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout topLayout = new javax.swing.GroupLayout(top);
         top.setLayout(topLayout);
         topLayout.setHorizontalGroup(
@@ -82,16 +94,22 @@ public class Root extends javax.swing.JFrame {
                 .addComponent(Go)
                 .addGap(18, 18, 18)
                 .addComponent(removeFacilityFromList)
-                .addContainerGap(925, Short.MAX_VALUE))
+                .addGap(347, 347, 347)
+                .addComponent(runPassPrediction, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(447, Short.MAX_VALUE))
         );
         topLayout.setVerticalGroup(
             topLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(topLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(topLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Go)
-                    .addComponent(removeFacilityFromList))
-                .addContainerGap(32, Short.MAX_VALUE))
+                .addGroup(topLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(topLayout.createSequentialGroup()
+                        .addGroup(topLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Go)
+                            .addComponent(removeFacilityFromList))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addComponent(runPassPrediction, javax.swing.GroupLayout.DEFAULT_SIZE, 44, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
         getContentPane().add(top, java.awt.BorderLayout.PAGE_START);
@@ -258,6 +276,10 @@ public class Root extends javax.swing.JFrame {
         createSatelliteDialog.setVisible(true);
     }//GEN-LAST:event_CustomSatelliteMenuItemActionPerformed
 
+    private void runPassPredictionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_runPassPredictionActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_runPassPredictionActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -312,6 +334,7 @@ public class Root extends javax.swing.JFrame {
     private javax.swing.JMenuBar menuBar;
     private javax.swing.JMenuItem newMenuItem;
     private javax.swing.JButton removeFacilityFromList;
+    private javax.swing.JButton runPassPrediction;
     private javax.swing.JCheckBoxMenuItem scaleMenuItem;
     private javax.swing.JPanel top;
     private javax.swing.JCheckBoxMenuItem worldMenuItem;
