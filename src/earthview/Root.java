@@ -51,9 +51,9 @@ public class Root extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         universalTime = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
+        localDate = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
+        universalDate = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         left = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -252,16 +252,16 @@ public class Root extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel3.setText("تاریخ محلی");
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel4.setText("14/10/2016");
+        localDate.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        localDate.setForeground(new java.awt.Color(255, 255, 0));
+        localDate.setText("14/10/2016");
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel5.setText("تاریخ جهانی");
 
-        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel6.setText("14/10/2016");
+        universalDate.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        universalDate.setForeground(new java.awt.Color(255, 255, 0));
+        universalDate.setText("14/10/2016");
 
         javax.swing.GroupLayout bottomLayout = new javax.swing.GroupLayout(bottom);
         bottom.setLayout(bottomLayout);
@@ -269,11 +269,11 @@ public class Root extends javax.swing.JFrame {
             bottomLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, bottomLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(universalDate, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(localDate, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel3)
                 .addGap(18, 18, 18)
@@ -296,9 +296,9 @@ public class Root extends javax.swing.JFrame {
                     .addComponent(jLabel2)
                     .addComponent(universalTime)
                     .addComponent(jLabel3)
-                    .addComponent(jLabel4)
+                    .addComponent(localDate)
                     .addComponent(jLabel5)
-                    .addComponent(jLabel6))
+                    .addComponent(universalDate))
                 .addContainerGap())
         );
 
@@ -573,9 +573,7 @@ public class Root extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JScrollPane jScrollPane1;
@@ -584,6 +582,7 @@ public class Root extends javax.swing.JFrame {
     private javax.swing.JPopupMenu.Separator jSeparator3;
     private javax.swing.JPopupMenu.Separator jSeparator4;
     private javax.swing.JPanel left;
+    private javax.swing.JLabel localDate;
     private javax.swing.JLabel localTime;
     private javax.swing.JMenuBar menuBar;
     private javax.swing.JMenuItem newMenuItem;
@@ -591,6 +590,7 @@ public class Root extends javax.swing.JFrame {
     private javax.swing.JButton runPassPrediction;
     private javax.swing.JCheckBoxMenuItem scaleMenuItem;
     private javax.swing.JPanel top;
+    private javax.swing.JLabel universalDate;
     private javax.swing.JLabel universalTime;
     private javax.swing.JCheckBoxMenuItem worldMenuItem;
     // End of variables declaration//GEN-END:variables
