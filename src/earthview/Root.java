@@ -38,7 +38,6 @@ public class Root extends javax.swing.JFrame {
         CustomFacility = new javax.swing.JButton();
         CustomSatellite = new javax.swing.JButton();
         Help = new javax.swing.JButton();
-        About = new javax.swing.JButton();
         Compass = new javax.swing.JToggleButton();
         WorldView = new javax.swing.JToggleButton();
         Scale = new javax.swing.JToggleButton();
@@ -81,14 +80,14 @@ public class Root extends javax.swing.JFrame {
         top.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         top.setPreferredSize(new java.awt.Dimension(701, 70));
 
-        Go.setText("GoToLatLon");
+        Go.setText("برو");
         Go.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 GoActionPerformed(evt);
             }
         });
 
-        removeFacilityFromList.setText("remove");
+        removeFacilityFromList.setText("حذف از لیست");
         removeFacilityFromList.setToolTipText("");
         removeFacilityFromList.setEnabled(false);
         removeFacilityFromList.addActionListener(new java.awt.event.ActionListener() {
@@ -99,7 +98,7 @@ public class Root extends javax.swing.JFrame {
 
         runPassPrediction.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         runPassPrediction.setForeground(new java.awt.Color(255, 255, 0));
-        runPassPrediction.setText("Run");
+        runPassPrediction.setText("پردازش");
         runPassPrediction.setToolTipText("");
         runPassPrediction.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -107,70 +106,63 @@ public class Root extends javax.swing.JFrame {
             }
         });
 
-        NewFacility.setText("NewFacility");
+        NewFacility.setText("تجهیزات");
         NewFacility.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 NewFacilityActionPerformed(evt);
             }
         });
 
-        CustomFacility.setText("CustomFacility");
+        CustomFacility.setText("معرفی تجهیزات");
         CustomFacility.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 CustomFacilityActionPerformed(evt);
             }
         });
 
-        CustomSatellite.setText("CustomSatellite");
+        CustomSatellite.setText("ماهواره");
         CustomSatellite.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 CustomSatelliteActionPerformed(evt);
             }
         });
 
-        Help.setText("Help");
+        Help.setText("راهنما");
         Help.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 HelpActionPerformed(evt);
             }
         });
 
-        About.setText("About");
-        About.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AboutActionPerformed(evt);
-            }
-        });
-
-        Compass.setText("Compass");
+        Compass.setText("جهت");
         Compass.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 CompassActionPerformed(evt);
             }
         });
 
-        WorldView.setText("WorldView");
+        WorldView.setText("دید جهانی");
         WorldView.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 WorldViewActionPerformed(evt);
             }
         });
 
-        Scale.setText("Scale");
+        Scale.setText("مقیاس");
         Scale.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ScaleActionPerformed(evt);
             }
         });
 
-        Save.setText("Save");
+        Save.setText("ذخیره");
         Save.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 SaveActionPerformed(evt);
             }
         });
 
-        Exit.setText("Exit");
+        Exit.setText("خروج");
         Exit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ExitActionPerformed(evt);
@@ -189,26 +181,24 @@ public class Root extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(NewFacility)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(CustomFacility, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(CustomSatellite, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(CustomFacility, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(CustomSatellite)
+                .addGap(18, 18, 18)
                 .addComponent(Scale)
                 .addGap(18, 18, 18)
                 .addComponent(WorldView)
                 .addGap(18, 18, 18)
-                .addComponent(Compass, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addComponent(Compass)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(Help)
-                .addGap(18, 18, 18)
-                .addComponent(About, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(Save)
                 .addGap(18, 18, 18)
                 .addComponent(Exit)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 274, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
                 .addComponent(runPassPrediction, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addContainerGap(419, Short.MAX_VALUE))
         );
         topLayout.setVerticalGroup(
             topLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -225,7 +215,6 @@ public class Root extends javax.swing.JFrame {
                     .addComponent(WorldView)
                     .addComponent(Compass)
                     .addComponent(Help)
-                    .addComponent(About)
                     .addComponent(Save)
                     .addComponent(Exit))
                 .addContainerGap())
@@ -346,7 +335,7 @@ public class Root extends javax.swing.JFrame {
 
         fileMenu.setText("File");
 
-        newMenuItem.setText("NewFacility");
+        newMenuItem.setText("تجهیزات");
         newMenuItem.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 newMenuItemActionPerformed(evt);
@@ -355,7 +344,7 @@ public class Root extends javax.swing.JFrame {
         fileMenu.add(newMenuItem);
         fileMenu.add(jSeparator3);
 
-        customeFacilityMenuItem.setText("CustomFacility");
+        customeFacilityMenuItem.setText("تعریف تجهیزات");
         customeFacilityMenuItem.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 customeFacilityMenuItemActionPerformed(evt);
@@ -364,7 +353,7 @@ public class Root extends javax.swing.JFrame {
         fileMenu.add(customeFacilityMenuItem);
         fileMenu.add(jSeparator4);
 
-        CustomSatelliteMenuItem.setText("CustomSatellite");
+        CustomSatelliteMenuItem.setText("تعریف ماهواره");
         CustomSatelliteMenuItem.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 CustomSatelliteMenuItemActionPerformed(evt);
@@ -484,10 +473,6 @@ public class Root extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_HelpActionPerformed
 
-    private void AboutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AboutActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_AboutActionPerformed
-
     private void SaveMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SaveMenuItemActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_SaveMenuItemActionPerformed
@@ -549,7 +534,6 @@ public class Root extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton About;
     private javax.swing.JToggleButton Compass;
     private javax.swing.JButton CustomFacility;
     private javax.swing.JButton CustomSatellite;
