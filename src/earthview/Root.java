@@ -72,6 +72,8 @@ public class Root extends javax.swing.JFrame {
         worldMenuItem = new javax.swing.JCheckBoxMenuItem();
         jSeparator2 = new javax.swing.JPopupMenu.Separator();
         scaleMenuItem = new javax.swing.JCheckBoxMenuItem();
+        placeNameMenuItem = new javax.swing.JCheckBoxMenuItem();
+        openStreetMenuItem = new javax.swing.JCheckBoxMenuItem();
 
         jMenuItem1.setText("jMenuItem1");
 
@@ -365,7 +367,7 @@ public class Root extends javax.swing.JFrame {
 
         editMenu.setText("Edit");
 
-        SaveMenuItem.setText("Save");
+        SaveMenuItem.setText("ذخیره");
         SaveMenuItem.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 SaveMenuItemActionPerformed(evt);
@@ -377,7 +379,7 @@ public class Root extends javax.swing.JFrame {
 
         jMenu1.setText("view");
 
-        compassMenuItem.setText("compass");
+        compassMenuItem.setText("جهت");
         compassMenuItem.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 compassMenuItemActionPerformed(evt);
@@ -386,7 +388,7 @@ public class Root extends javax.swing.JFrame {
         jMenu1.add(compassMenuItem);
         jMenu1.add(jSeparator1);
 
-        worldMenuItem.setText("worldView");
+        worldMenuItem.setText("دید جهانی");
         worldMenuItem.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 worldMenuItemActionPerformed(evt);
@@ -395,13 +397,29 @@ public class Root extends javax.swing.JFrame {
         jMenu1.add(worldMenuItem);
         jMenu1.add(jSeparator2);
 
-        scaleMenuItem.setText("Scale");
+        scaleMenuItem.setText("مقیاس");
         scaleMenuItem.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 scaleMenuItemActionPerformed(evt);
             }
         });
         jMenu1.add(scaleMenuItem);
+
+        placeNameMenuItem.setText("نام مناطق جهان");
+        placeNameMenuItem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                placeNameMenuItemActionPerformed(evt);
+            }
+        });
+        jMenu1.add(placeNameMenuItem);
+
+        openStreetMenuItem.setText("نام مناطق و راهها");
+        openStreetMenuItem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                openStreetMenuItemActionPerformed(evt);
+            }
+        });
+        jMenu1.add(openStreetMenuItem);
 
         menuBar.add(jMenu1);
 
@@ -497,6 +515,14 @@ public class Root extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_ExitActionPerformed
 
+    private void placeNameMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_placeNameMenuItemActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_placeNameMenuItemActionPerformed
+
+    private void openStreetMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_openStreetMenuItemActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_openStreetMenuItemActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -570,6 +596,8 @@ public class Root extends javax.swing.JFrame {
     private javax.swing.JLabel localTime;
     private javax.swing.JMenuBar menuBar;
     private javax.swing.JMenuItem newMenuItem;
+    private javax.swing.JCheckBoxMenuItem openStreetMenuItem;
+    private javax.swing.JCheckBoxMenuItem placeNameMenuItem;
     private javax.swing.JButton removeFacilityFromList;
     private javax.swing.JButton runPassPrediction;
     private javax.swing.JCheckBoxMenuItem scaleMenuItem;

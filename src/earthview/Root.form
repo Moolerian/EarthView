@@ -51,7 +51,7 @@
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="SaveMenuItem">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Save"/>
+                <Property name="text" type="java.lang.String" value="&#x630;&#x62e;&#x6cc;&#x631;&#x647;"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SaveMenuItemActionPerformed"/>
@@ -66,7 +66,7 @@
           <SubComponents>
             <MenuItem class="javax.swing.JCheckBoxMenuItem" name="compassMenuItem">
               <Properties>
-                <Property name="text" type="java.lang.String" value="compass"/>
+                <Property name="text" type="java.lang.String" value="&#x62c;&#x647;&#x62a;"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="compassMenuItemActionPerformed"/>
@@ -76,7 +76,7 @@
             </MenuItem>
             <MenuItem class="javax.swing.JCheckBoxMenuItem" name="worldMenuItem">
               <Properties>
-                <Property name="text" type="java.lang.String" value="worldView"/>
+                <Property name="text" type="java.lang.String" value="&#x62f;&#x6cc;&#x62f; &#x62c;&#x647;&#x627;&#x646;&#x6cc;"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="worldMenuItemActionPerformed"/>
@@ -86,10 +86,26 @@
             </MenuItem>
             <MenuItem class="javax.swing.JCheckBoxMenuItem" name="scaleMenuItem">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Scale"/>
+                <Property name="text" type="java.lang.String" value="&#x645;&#x642;&#x6cc;&#x627;&#x633;"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="scaleMenuItemActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JCheckBoxMenuItem" name="placeNameMenuItem">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="&#x646;&#x627;&#x645; &#x645;&#x646;&#x627;&#x637;&#x642; &#x62c;&#x647;&#x627;&#x646;"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="placeNameMenuItemActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JCheckBoxMenuItem" name="openStreetMenuItem">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="&#x646;&#x627;&#x645; &#x645;&#x646;&#x627;&#x637;&#x642; &#x648; &#x631;&#x627;&#x647;&#x647;&#x627;"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="openStreetMenuItemActionPerformed"/>
               </Events>
             </MenuItem>
           </SubComponents>
